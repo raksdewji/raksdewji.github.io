@@ -1,20 +1,34 @@
-.alcohol{
-  text-align: center;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+body{
+  background-image: url("background.jpg");
 }
 
-.large-vid {
-  position: fixed; z-index: -99; width: 100%; height: 100%;
-  filter: blur(55px);
+.text{
+  background-color: white;
+  opacity: 0.5;
+  margin: 100px;
 }
 
+.social{
+  margin-top: 215px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  height: auto;
+}
+.social-icon:hover{
+  text-decoration: none;
+}
 
-#video{
-  width: 560px; /* you have to have a size or this method doesn't work */
-  height: 315px; /* think about making these max-width instead - might give you some more responsiveness */
+@-webkit-keyframes typing { from { width: 0; } }
+@-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
 
-  position: absolute; /* positions out of the flow, but according to the nearest parent */
-  top: 0; right: 0; /* confuse it i guess */
-  bottom: 0; left: 0;
-  margin: auto;
+h2 {
+	border-right: .1em solid black;
+	width: 16.5em;
+	width: 20ch;
+	margin: auto;
+	white-space: nowrap;
+	overflow: hidden;
+	-webkit-animation: typing 2s steps(21, end),
+	           blink-caret .5s step-end infinite alternate;
 }
